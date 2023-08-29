@@ -1,0 +1,433 @@
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background: #f8f8f8;
+}
+
+/* Head */
+#head {
+  background: url("../img/bg_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  min-height: 770px;
+}
+
+#head .overlay {
+  background: rgba(0, 0, 0, 0.4);
+  min-height: 770px;
+}
+
+#head .font-sz-1 {
+  font-size: 0.82rem;
+}
+
+#head .font-sz-2 {
+  font-size: 3.7rem;
+}
+
+/* Availability */
+
+#availability {
+  margin-top: -65px;
+}
+
+#availability .back-none {
+  background: none;
+  border: none;
+}
+
+#availability select option {
+  background: #000;
+}
+
+/* Booking */
+
+#booking .back-img-1 {
+  background: url(../img/book-img-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  min-height: 246px;
+}
+
+#booking .back-img-2 {
+  background: url(../img/book-img-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  min-height: 240px;
+}
+
+/* Service */
+
+#service .back-white {
+  background: #fff;
+  width: 100%;
+  min-height: 158px;
+  border-radius: 50% 50% 50% 0;
+}
+
+#service .width-1 {
+  max-width: 45%;
+}
+
+#service .padding-1 {
+  padding-top: 37px;
+}
+
+#service .padding-4 {
+  padding-top: 30px;
+}
+
+/* Best-Hotel */
+
+#best-hotel .back-img {
+  background: url("../img/bg_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  min-height: 260px;
+}
+
+#best-hotel .overlay {
+  background: rgba(0, 0, 0, 0.8);
+  min-height: 260px;
+}
+
+#best-hotel .font-sz {
+  font-size: 0.85rem;
+}
+
+/* feature-room */
+#feature-room .back-img-1 {
+  background: url("../img/room-1.jpg");
+}
+#feature-room .back-img-2 {
+  background: url("../img/room-2.jpg");
+}
+#feature-room .back-img-3 {
+  background: url("../img/room-3.jpg");
+}
+
+#feature-room .back {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  min-height: 225px;
+}
+
+/* Tour */
+#tour .back-img {
+  background: url("../img/bg_2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  min-height: 520px;
+}
+
+#tour .overlay {
+  background: rgba(0, 0, 0, 0.5);
+  min-height: 520px;
+}
+
+#tour .height-100 {
+  min-height: 520px;
+}
+
+#tour .font-sz-1 {
+  font-size: 0.85rem;
+}
+
+#tour .font-sz-2 {
+  font-size: 4rem;
+}
+
+/* Resto - Bar */
+#resto-bar .back-img {
+  background: url("../img/resto-bar.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 92%;
+  min-height: 516px;
+}
+
+#resto-bar .overlay {
+  background: rgba(0, 0, 0, 0.4);
+  min-height: 516px;
+}
+
+#resto-bar .resto-logo {
+  background: url("../img/resto-bar-logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 19%;
+  min-height: 130px;
+  border-radius: 5px;
+}
+
+#resto-bar .back-logo-1 {
+  background: url("../img/menu-1.jpg");
+}
+
+#resto-bar .back-logo-2 {
+  background: url("../img/menu-2.jpg");
+}
+
+#resto-bar .back-logo-3 {
+  background: url("../img/menu-3.jpg");
+}
+
+#resto-bar .back-logo-4 {
+  background: url("../img/menu-4.jpg");
+}
+
+#resto-bar .back-logo-5 {
+  background: url("../img/menu-5.jpg");
+}
+
+#resto-bar .back-logo-6 {
+  background: url("../img/menu-6.jpg");
+}
+
+#resto-bar .back-logo-7 {
+  background: url("../img/menu-7.jpg");
+}
+
+#resto-bar .back-logo-8 {
+  background: url("../img/menu-8.jpg");
+}
+
+#resto-bar .back {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 19%;
+  min-height: 72px;
+  border-radius: 50%;
+}
+
+/* Happy-Guest */
+
+#happy-guest .back-logo-1 {
+  background: url("../img/person_1.jpg");
+}
+#happy-guest .back-logo-2 {
+  background: url("../img/person_2.jpg");
+}
+#happy-guest .back-logo-3 {
+  background: url("../img/person_3.jpg");
+}
+
+#happy-guest .back {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 27%;
+  height: 75px;
+  border-radius: 50%;
+}
+
+/* Blank */
+
+#blank .back-ground {
+  background: #000;
+  width: 100%;
+  min-height: 280px;
+}
+
+#blank .height-100 {
+  min-height: 280px;
+}
+
+/* Blog */
+
+#blog .back-img-1 {
+  background: url("../img/blog-img-1.jpg");
+}
+
+#blog .back-img-2 {
+  background: url("../img/blog-img-2.jpg");
+}
+
+#blog .back-img-3 {
+  background: url("../img/blog-img-3.jpg");
+}
+
+#blog .back-img-4 {
+  background: url("../img/blog-img-4.jpg");
+}
+
+#blog .back {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  min-height: 230px;
+}
+
+#blog .back-color {
+  background: #fff;
+  min-height: 225px;
+}
+
+/* Gallery */
+
+#gallery .back-gallery-1 {
+  background: url("../img/gallery-1.jpg");
+}
+
+#gallery .back-gallery-3 {
+  background: url("../img/gallery-3.jpg");
+}
+
+#gallery .back-gallery-4 {
+  background: url("../img/gallery-4.jpg");
+}
+
+#gallery .back-gallery-5 {
+  background: url("../img/gallery-5.jpg");
+}
+
+#gallery .back {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 185px;
+}
+
+/* Foot */
+#foot {
+  background: #1a1a1a;
+  width: 100%;
+  min-height: 500px;
+}
+
+#foot .height-100 {
+  min-height: 500px;
+}
+
+#foot .text-color {
+  color: #8a968c;
+}
+
+#foot .bg-color {
+  background: #262626;
+}
+
+/* footer */
+
+#footer {
+  background: #000;
+  width: 100%;
+  min-height: 110px;
+}
+
+#footer .height-100 {
+  min-height: 110px;
+}
+
+#footer .text-color {
+  color: #8a968c;
+}
+
+/* ****************************************************************************************** */
+
+.bg-col-cream {
+  background: #e7c290;
+}
+
+.color-cream {
+  color: #e7c290;
+}
+
+.btn-hover:hover {
+  background: #b18e63;
+}
+
+.font-fam {
+  font-family: "Merriweather", serif;
+}
+
+.font-sz-6 {
+  font-size: 0.6rem;
+}
+
+.font-sz-7 {
+  font-size: 0.7rem;
+}
+
+.font-sz-8 {
+  font-size: 0.8rem;
+}
+
+.font-sz-9 {
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 991px) {
+  #head .bg-color-black {
+    background: #000 !important;
+  }
+
+  #resto-bar .back-img {
+    width: 100%;
+  }
+
+  #resto-bar .st-50 {
+    left: 50% !important;
+  }
+
+  #resto-bar .resto-logo {
+    width: 15%;
+    height: 130px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #service .back-white {
+    background: #fff;
+    width: 100%;
+    min-height: 158px;
+    border-radius: 0;
+  }
+
+  #service .width-1 {
+    max-width: auto;
+  }
+
+  #resto-bar .resto-logo {
+    width: 18%;
+    height: 130px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #head .font-sz-1 {
+    font-size: 0.57rem;
+  }
+
+  #head .font-sz-2 {
+    font-size: 1.5rem;
+  }
+
+  #tour .font-sz-2 {
+    font-size: 3rem;
+  }
+
+  #resto-bar .resto-logo {
+    width: 28%;
+    height: 130px;
+  }
+}

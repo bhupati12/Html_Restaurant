@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-2</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+
+<body>
+
+    <!-- Start Here -->
+
+    <!-- Head Section-->
+    <header id="head" class="back">
+        <div class="overlay">
+            <nav class="navbar navbar-expand-lg bg-color-black bg-transparent py-4">
+                <div class="d-flex col-11 col-lg-8 mx-auto">
+                    <a class="navbar-brand text-white" style="font-size: 1rem;" href="#">HOTEL BOOKING</a>
+                    <button class="navbar-toggler ms-auto text-white border-0 fs-6" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="">
+                            <i class="fa-solid fa-bars text-white pe-1"></i> MENU
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item px-3">
+                                <a class="nav-link active text-white font-sz-8" aria-current="page" href="#">HOME</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link text-white font-sz-8" href="#">ABOUT</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link text-white font-sz-8" href="#">ROOMS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white font-sz-8" href="#">RESTO &amp; BAR</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link text-white font-sz-8" href="#">BLOG</a>
+                            </li>
+
+                            <li class="nav-item px-3">
+                                <a class="nav-link text-white font-sz-8">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container pt-5 mt-5">
+                <div class="row pt-5 mt-5 mb-3">
+                    <div class="col-12 col-md-8 col-lg-8 mx-auto pt-3">
+                        <div class="text-center">
+                            <p class="text-white fw-semibold font-sz-1">ENJOY YOUR WONDERFUL HOLIDAYS WITH A
+                                GREAT LUXURY
+                                EXPERIENCE!</p>
+                            <h1 class="h1 text-white font-sz-2 font-fam fw-bold">Most Relaxing Place</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="d-none d-md-block col-12 text-center">
+                        <button class="btn bg-col-cream btn-hover text-white rounded-0 px-4 py-3 font-sz-8"
+                            type="button">TAKE A
+                            TOUR <i class="fa-solid fa-arrow-right ps-1"></i></button>
+                        <button class="btn btn-outline-light rounded-0 px-4 py-3 font-sz-8" type="button">LEARN MORE <i
+                                class="fa-solid fa-arrow-right ps-1"></i></button>
+                    </div>
+
+                    <div class="d-grid d-md-none gap-2">
+                        <button class="btn bg-col-cream btn-hover text-white rounded-0 font-sz-8" type="button">TAKE A
+                            TOUR <i class="fa-solid fa-arrow-right"></i></button>
+                        <button class="btn btn-outline-light rounded-0 font-sz-8" type="button">LEARN MORE
+                            <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Availability -->
+    <section id="availability" class="pb-5">
+        <div class="d-flex col-11 col-md-9 col-lg-8 mx-auto">
+            <div class="row w-100 m-0">
+                <div class="col-12 col-lg-10 bg-black">
+                    <div class="row p-4">
+                        <!-- <div class="col-12 col-md-6 col-lg-3 font-sz-9">
+                            <p class="text-white">CHECK-IN</p>
+                            <p class="text-secondary"><i class="fa-regular fa-calendar-days"></i> Check-In Date</p>
+                        </div> -->
+
+                        <!-- <div class=" col-12 col-md-6 col-lg-3 font-sz-9">
+                            <p class="text-white">CHECK-OUT</p>
+                            <p class="text-secondary"><i class="fa-regular fa-calendar-days"></i> Check-Out Date</p>
+                        </div> -->
+
+                        <div class="col-12 col-md-6 col-lg-3 font-sz-9">
+                            <p class="text-white">CHECK-IN</p>
+                            <input type="date" class="form-control">
+                        </div>
+
+                        <div class=" col-12 col-md-6 col-lg-3 font-sz-9">
+                            <p class="text-white">CHECK-OUT</p>
+                            <input type="date" class="form-control">
+
+                        </div>
+
+
+                        <div class="col-12 col-md-6 col-lg-3 font-sz-9">
+                            <p class="text-white">ROOMS</p>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Suite</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+
+                        <div class=" col-12 col-md-6 col-lg-3 font-sz-9">
+                            <p class="text-white">GUESTS</p>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>1 Person</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-2 bg-col-cream pt-2">
+                    <div class="row h-100 align-items-center">
+                        <div class="col text-center">
+                            <p class="text-white fw-semibold">CHECK AVAILABILITY</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Booking -->
+    <section id="booking" class="py-5">
+        <div class="d-flex col-11 col-lg-8 mx-auto">
+            <div class="row">
+                <!-- 1 Col -->
+                <div class="col-12 col-md-3">
+                    <div class="row">
+                        <div class="col-12 mb-md-4 order-2 order-md-1">
+                            <div class="bg-white">
+                                <div class="text-center p-3">
+                                    <img src="img/book-logo-img-1.png" alt="" class="img-fluid py-3" width="72px">
+                                    <h4 class="display-6 fs-4 pb-3 font-fam">Cozy Room</h4>
+                                    <p class="text-muted pb-3">Far far away, behind the world mountains, far from the
+                                        countries Vokalia.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 order-1 order-md-2">
+                            <div class="back-img-1">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 Col -->
+                <div class="col-12 col-md-3">
+                    <div class="row">
+                        <div class="col-12 mb-md-4">
+                            <div class="back-img-2">
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="bg-white">
+                                <div class="text-center p-3">
+                                    <img src="img/book-logo-img-2.png" alt="" class="img-fluid py-3" width="72px">
+                                    <h4 class="display-6 fs-4 pb-3 font-fam">Special Offers</h4>
+                                    <p class="text-muted pb-3">Far far away, behind the world mountains, far from the
+                                        countries Vokalia.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 Col -->
+                <div class="col-12 col-md-6">
+                    <div class="d-flex flex-column justify-content-center h-100">
+                        <div class="p-4">
+                            <h6 class="py-2">ABOUT US</h6>
+                            <h1 class="h1 py-3 font-fam">A Hotel Booking Agency</h1>
+                            <p class="text-muted font-sz-9 py-3">Far far away, behind the world mountains, far from the
+                                countries
+                                Vokalia
+                                and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right
+                                at
+                                the coast of the Semantics, a large language ocean.
+                            </p>
+                            <p class="py-4">
+                                <button
+                                    class="btn bg-col-cream btn-hover text-white fw-semibold rounded-0 font-sz-9 p-3">BOOK
+                                    YOUR
+                                    ROOM
+                                    NOW</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Service -->
+    <section id="service" class="pt-4 pb-5">
+        <div class="d-flex col-11 col-lg-8 mx-auto">
+            <div class="row pt-5">
+                <div class="col-12 text-center pt-4">
+                    <h6 class="h6 color-cream">SERVICES</h6>
+                    <h1 class="h1 font-fam py-5">Explore Our Hotel Services</h1>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+
+                        <div class="col-md-3 col-lg-2 mb-3">
+                            <div class="back-white">
+                                <div class="text-center padding-1 pb-3">
+                                    <img src="img/sevice-img-1.png" alt="" class="img-fluid width-1">
+                                    <p class="pt-2">Free Wifi</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-lg-2 mb-3">
+                            <div class="back-white">
+                                <div class="text-center padding-1 pb-3">
+                                    <img src="img/service-img-2.png" alt="" class="img-fluid width-1">
+                                    <p class="pt-2">Easy Booking</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-lg-2 mb-3">
+                            <div class="back-white">
+                                <div class="text-center pt-4 pb-3">
+                                    <img src="img/service-img-3.png" alt="" class="img-fluid width-1">
+                                    <p class="pt-2">Restaurant</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-lg-2 mb-3">
+                            <div class="back-white">
+                                <div class="text-center padding-4 pb-3">
+                                    <img src="img/service-img-4.png" alt="" class="img-fluid width-1">
+                                    <p class="pt-2">Swimming Pool</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-lg-2 ms-auto mb-3">
+                            <div class="back-white">
+                                <div class="text-center padding-4 pb-3">
+                                    <img src="img/service-img-5.png" alt="" class="img-fluid width-1">
+                                    <p class="pt-2">Beauty &amp; Health</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-lg-2 me-auto mb-3">
+                            <div class="back-white">
+                                <div class="text-center padding-4 pb-3">
+                                    <img src="img/service-img-6.png" alt="" class="img-fluid width-1">
+                                    <p class="pt-2">Help &amp; Support</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Best Hotel -->
+    <section id="best-hotel" class="py-5">
+        <div class="back-img">
+            <div class="overlay">
+                <div class="d-flex col-11 col-lg-6 mx-auto py-4">
+                    <div class="row py-3 justify-content-md-center">
+                        <div class="col-12 col-md-8 py-3">
+                            <div class="d-flex justify-content-md-center text-white">
+                                <div class="">
+                                    <h6 class="h6 color-cream py-2">FIND BEST HOTEL FOR LEAVING</h6>
+                                    <h2 class="h2 font-fam">Find the Best Hotel in Your Next Vacation</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4 d-flex align-items-md-center ">
+                            <div class=" text-white">
+                                <button
+                                    class="btn bg-col-cream btn-hover text-white fw-semibold rounded-0 font-sz px-4 py-3">BOOK
+                                    NOW</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Featured-Room -->
+    <section id="feature-room" class="py-5">
+        <div class="col-11 col-lg-8 mx-auto">
+            <div class="row py-3 mb-5">
+                <div class="col-12">
+                    <div class="text-center">
+                        <h6 class="h6 color-cream py-2">OUR ROOMS</h6>
+                        <h1 class="h1 font-fam">Featured Rooms</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="row">
+                        <div class="col-12 d-flex flex-column ">
+                            <div class="text-center bg-white py-5 px-3 order-2 order-md-1">
+                                <h4 class="pb-3">Suite Room</h4>
+                                <p class="text-muted font-sz-9">Far far away, behind the word mountains, far from the
+                                    countries
+                                    Vokalia and Consonantia, thre live the blind texts.</p>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="color-cream">$450 / NIGHT</span>
+                                    <span><button class="btn btn-outline-dark border-0">BOOK
+                                            NOW</button></span>
+                                </div>
+                            </div>
+
+                            <div class="back-img-1 back order-1 order-md-2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="row">
+                        <div class="col-12 d-flex flex-column">
+                            <div class="text-center bg-white py-5 px-3 order-2">
+                                <h4 class="pb-3">Suite Room</h4>
+                                <p class="text-muted font-sz-9">Far far away, behind the word mountains, far from the
+                                    countries
+                                    Vokalia and Consonantia, thre live the blind texts.</p>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="color-cream">$450 / NIGHT</span>
+                                    <span><button class="btn btn-outline-dark border-0">BOOK
+                                            NOW</button></span>
+                                </div>
+                            </div>
+
+                            <div class="back-img-2 back order-1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mx-auto mb-4">
+                    <div class="row">
+                        <div class="col-12 d-flex flex-column">
+                            <div class="text-center bg-white py-5 px-3 order-2 order-md-1">
+                                <h4 class="pb-3">Suite Room</h4>
+                                <p class="text-muted font-sz-9">Far far away, behind the word mountains, far from the
+                                    countries
+                                    Vokalia and Consonantia, thre live the blind texts.</p>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="color-cream">$450 / NIGHT</span>
+                                    <span><button class="btn btn-outline-dark border-0">BOOK
+                                            NOW</button></span>
+                                </div>
+                            </div>
+
+                            <div class="back-img-3 back order-1 order-md-2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Tour -->
+    <section id="tour" class="py-5">
+        <div class="back-img">
+            <div class="overlay">
+                <div class="d-flex w-100 height-100 justify-content-center align-items-center">
+                    <div class="text-white text-center">
+                        <h6 class="h6 font-sz-1">WATCH OUR LUXURIOUS HOTEL</h6>
+                        <h1 class="h1 font-fam font-sz-2 py-3">Take A Tour</h1>
+                        <p class=""><i class="fa-solid fa-play fa-2x p-4 bg-col-cream rounded-circle"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Resto - Bar -->
+    <section id="resto-bar" class="py-5">
+        <div class="col-11 col-lg-12 p-lg-3 mx-auto">
+
+            <div class="row py-5">
+                <div class="col-12 text-center">
+                    <h6 class="h6 color-cream pb-3">RESTO &amp; BAR</h6>
+                    <h1 class="h1 font-fam">Restaurant &amp; Bar</h1>
+                </div>
+            </div>
+
+            <div class="row align-items-stretch">
+                <div class="col-12 col-lg-5 mb-4">
+                    <div class="back-img ">
+                        <div class="overlay position-relative">
+                            <div class="resto-logo position-absolute top-50 st-50 start-100 translate-middle">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg">
+                    <div class="d-flex flex-column ">
+
+                        <div class="d-flex align-items-center bg-white p-4 mb-2">
+                            <div class="back-logo-1 back"></div>
+                            <div class="ps-3">Grilled Beef with potatoes</div>
+                            <div class="ps-4 color-cream">$20.00</div>
+                        </div>
+
+                        <div class="d-flex align-items-center bg-white p-4 mb-2">
+                            <div class="back-logo-2 back"></div>
+                            <div class="ps-3">Grilled Beef with potatoes</div>
+                            <div class="ps-4 color-cream">$20.00</div>
+                        </div>
+                        <div class="d-flex align-items-center bg-white p-4 mb-2">
+                            <div class="back-logo-3 back"></div>
+                            <div class="ps-3">Grilled Beef with potatoes</div>
+                            <div class="ps-4 color-cream">$20.00</div>
+                        </div>
+                        <div class="d-flex align-items-center bg-white p-4 mb-2">
+                            <div class="back-logo-4 back"></div>
+                            <div class="ps-3">Grilled Beef with potatoes</div>
+                            <div class="ps-4 color-cream">$20.00</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg">
+                    <div class="d-flex flex-column ">
+                        <div class="d-flex align-items-center bg-white p-4 mb-2">
+                            <div class="back-logo-5 back"></div>
+                            <div class="ps-3">Grilled Beef with potatoes</div>
+                            <div class="ps-4 color-cream">$20.00</div>
+                        </div>
+                        <div class="d-flex align-items-center bg-white p-4 mb-2">
+                            <div class="back-logo-6 back"></div>
+                            <div class="ps-3">Grilled Beef with potatoes</div>
+                            <div class="ps-4 color-cream">$20.00</div>
+                        </div>
+                        <div class="d-flex align-items-center bg-white p-4 mb-2">
+                            <div class="back-logo-7 back"></div>
+                            <div class="ps-3">Grilled Beef with potatoes</div>
+                            <div class="ps-4 color-cream">$20.00</div>
+                        </div>
+                        <div class="d-flex align-items-center bg-white p-4 mb-2">
+                            <div class="back-logo-8 back"></div>
+                            <div class="ps-3">Grilled Beef with potatoes</div>
+                            <div class="ps-4 color-cream">$20.00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Happy Guest -->
+    <section id="happy-guest" class="py-5">
+        <div class="col-11 col-lg-8 mx-auto">
+
+            <div class="row py-5">
+                <div class="col-12">
+                    <div class="text-center">
+                        <h6 class="h6 color-cream pb-3">TESTIMONIAL</h6>
+                        <h1 class="h1 font-fam">Happy Guests</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 bg-white pb-5">
+                        <div class="d-flex py-3">
+                            <div class="d-md-none back-logo-1 back"></div>
+                            <div class="d-none d-md-block back-logo-2 back"></div>
+                            <!-- <div class="back-logo-3 back"></div> -->
+                            <div class="px-4">
+                                <h5 class="h5">Roger Scott</h5>
+                                <h6 class="h6 font-sz-8 color-cream">MARKETING MANAGER</h6>
+                            </div>
+                        </div>
+                        <div class="text-muted font-sz-9">Far far away, behind the word mountains, far from the
+                            countries Volkalia
+                            and Consonantia,
+                            there live the blind texts.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-none d-md-block col-md-6 col-lg-4">
+                    <div class="p-4 bg-white pb-5">
+                        <div class="d-flex py-3">
+                            <div class="d-none d-lg-block back-logo-1 back"></div>
+                            <!-- <div class="back-logo-2 back"></div> -->
+                            <div class="d-lg-none back-logo-3 back"></div>
+                            <div class="px-4">
+                                <h5 class="h5">Roger Scott</h5>
+                                <h6 class="h6 font-sz-8 color-cream">MARKETING MANAGER</h6>
+                            </div>
+                        </div>
+                        <div class="text-muted font-sz-9">Far far away, behind the word mountains, far from the
+                            countries Volkalia
+                            and Consonantia,
+                            there live the blind texts.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-none d-lg-block col-lg-4">
+                    <div class="p-4 bg-white pb-5">
+                        <div class="d-flex py-3">
+                            <div class="back-logo-2 back"></div>
+                            <div class="px-4">
+                                <h5 class="h5">Roger Scott</h5>
+                                <h6 class="h6 font-sz-8 color-cream">MARKETING MANAGER</h6>
+                            </div>
+                        </div>
+                        <div class="text-muted font-sz-9">Far far away, behind the word mountains, far from the
+                            countries Volkalia
+                            and Consonantia,
+                            there live the blind texts.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row py-2">
+                <div class="col-12 text-center">
+                    <i class="fa-solid fa-circle font-sz-6 text-muted px-1"></i>
+                    <i class="fa-solid fa-circle font-sz-6 text-muted px-1"></i>
+                    <i class="d-inline d-lg-none fa-solid fa-circle font-sz-6 text-muted px-1"></i>
+                    <i class="d-inline d-md-none fa-solid fa-circle font-sz-6 text-muted px-1"></i>
+                    <i class="d-inline d-md-none fa-solid fa-circle font-sz-6 text-muted px-1"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blank -->
+    <section id="blank" class="py-5">
+        <div class="back-ground">
+            <div class="col-11 col-md-10 col-lg-8 mx-auto">
+                <div class="row align-items-center height-100">
+                    <div class="col-6 col-lg-3 text-center color-cream">
+                        <h1 class="h1">38,900</h1>
+                        <p># of Happy Guests</p>
+                    </div>
+                    <div class="col-6 col-lg-3 text-center color-cream">
+                        <h1 class="h1">320</h1>
+                        <p># of Rooms</p>
+                    </div>
+                    <div class="col-6 col-lg-3 text-center color-cream">
+                        <h1 class="h1">1,000</h1>
+                        <p># of Staffs</p>
+                    </div>
+                    <div class="col-6 col-lg-3 text-center color-cream">
+                        <h1 class="h1">587</h1>
+                        <p># of Destination</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog" class="py-5">
+        <div class="col-lg-8 p-3 p-lg-0 mx-auto">
+            <div class="row py-4">
+                <div class="col-12">
+                    <div class="text-center">
+                        <h6 class="h6 color-cream pb-3">OUR BLOG</h6>
+                        <h1 class="h1 font-fam">Recent Blog</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pt-4">
+                <div class="col-md-6 col-lg-3 mb-3">
+                    <div class="back-img-1 back"></div>
+                    <div class="back-color p-3">
+                        <div class="d-flex justify-content-lg-between font-sz-7">
+                            <p class="text-muted px-3 px-lg-0">ADMIN</p>
+                            <p class="text-muted px-3 px-lg-0">DEC,23,2020</p>
+                            <p class="color-cream">3 COMMENTS</p>
+                        </div>
+                        <div class="fs-5 pb-4">Best Hotel Near Beach in Hawaii</div>
+                        <div class="text-muted font-sz-9">A small river named Duden flows by their place and supplies it
+                            with the
+                            necessary regelialia.</div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-3">
+                    <div class="back-img-2 back"></div>
+                    <div class="back-color p-3">
+                        <div class="d-flex justify-content-lg-between font-sz-7">
+                            <p class="text-muted px-3 px-lg-0">ADMIN</p>
+                            <p class="text-muted px-3 px-lg-0">DEC,23,2020</p>
+                            <p class="color-cream">3 COMMENTS</p>
+                        </div>
+                        <div class="fs-5 pb-4">Best Hotel Near Beach in Hawaii</div>
+                        <div class="text-muted font-sz-9">A small river named Duden flows by their place and supplies it
+                            with the
+                            necessary regelialia.</div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-3">
+                    <div class="back-img-3 back"></div>
+                    <div class="back-color p-3">
+                        <div class="d-flex px-md-3 px-lg-0 justify-content-lg-between font-sz-7">
+                            <p class="text-muted px-3 px-lg-0">ADMIN</p>
+                            <p class="text-muted px-3 px-lg-0">DEC,23,2020</p>
+                            <p>3 COMMENTS</p>
+                        </div>
+                        <div class="fs-5 pb-4">Best Hotel Near Beach in Hawaii</div>
+                        <div class="text-muted font-sz-9">A small river named Duden flows by their place and supplies it
+                            with the
+                            necessary regelialia.</div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-3">
+                    <div class="back-img-4 back"></div>
+                    <div class="back-color p-3">
+                        <div class="d-flex px-md-3 px-lg-0 justify-content-lg-between font-sz-7">
+                            <p class="text-muted px-3 px-lg-0">ADMIN</p>
+                            <p class="text-muted px-3 px-lg-0">DEC,23,2020</p>
+                            <p class="color-cream">3 COMMENTS</p>
+                        </div>
+                        <div class="fs-5 pb-4">Best Hotel Near Beach in Hawaii</div>
+                        <div class="text-muted font-sz-9">A small river named Duden flows by their place and supplies it
+                            with the
+                            necessary regelialia.</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Gallery -->
+    <section id="gallery" class="pt-5">
+        <div class="col-12 mx-auto p-3">
+            <div class="row">
+                <div class="col-12 col-md mb-4 mb-md-2">
+                    <div class="back-gallery-1 back"></div>
+                </div>
+                <div class="col-12 col-md mb-4 mb-md-2">
+                    <div class="back-gallery-1 back"></div>
+                </div>
+                <div class="col-12 col-md mb-4 mb-md-2">
+                    <div class="back-gallery-3 back"></div>
+                </div>
+                <div class="col-12 col-md mb-4 mb-md-2">
+                    <div class="back-gallery-4 back"></div>
+                </div>
+                <div class="col-12 col-md mb-2 mb-md-2">
+                    <div class="back-gallery-5 back"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- foot -->
+    <section id="foot">
+        <div class="col-12 p-3 p-lg-0 col-lg-8 mx-auto">
+            <div class="d-flex align-items-center height-100">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <h5 class="h5 text-white pt-5 pb-4">HOTEL BOOKING</h5>
+                        <p class="text-color pb-2 font-sz-9">A small river named Duden flows by their place and supplies
+                            it with
+                            the
+                            necessary regelialia.</p>
+                        <p>
+                            <i class="bg-color color-cream p-3 mx-1 fa-brands fa-twitter"></i>
+                            <i class="bg-color color-cream p-3 mx-1 fa-brands fa-facebook-f"></i>
+                            <i class="bg-color color-cream p-3 mx-1 fa-brands fa-instagram"></i>
+                        </p>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <h5 class="h5 text-white pt-5 pb-4">Services</h5>
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <p class="text-color font-sz-9"><i class="fa-solid fa-chevron-right text-white"></i>
+                                    Free Wifi</p>
+                                <p class="text-color font-sz-9"><i class="fa-solid fa-chevron-right text-white"></i>
+                                    Easy Booking
+                                </p>
+                                <p class="text-color font-sz-9"><i class="fa-solid fa-chevron-right text-white"></i>
+                                    Restaurant
+                                </p>
+                                <p class="text-color font-sz-9"><i class="fa-solid fa-chevron-right text-white"></i>
+                                    Swimming Pool
+                                </p>
+                            </div>
+
+                            <div class="col-12 col-lg-6">
+                                <p class="text-color font-sz-9"><i class="fa-solid fa-chevron-right text-white"></i>
+                                    Beauty &amp;
+                                    Health</p>
+                                <p class="text-color font-sz-9"><i class="fa-solid fa-chevron-right text-white"></i> 60"
+                                    Flatscreen TV
+                                </p>
+                                <p class="text-color font-sz-9"><i class="fa-solid fa-chevron-right text-white"></i>
+                                    Cold
+                                    Aircondition
+                                </p>
+                                <p class="text-color font-sz-9"><i class="fa-solid fa-chevron-right text-white"></i>
+                                    Help &amp;
+                                    Support</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-2">
+                        <h5 class="h5 text-white pt-5 pb-4">Quick Links</h5>
+                        <p class="text-color font-sz-9"><i class="fa-solid fa-chevron-right text-white"></i> Home</p>
+                        <p class="text-color font-sz-9"><i class="fa-solid fa-chevron-right text-white"></i> About</p>
+                        <p class="text-color font-sz-9"><i class="fa-solid fa-chevron-right text-white"></i> Rooms</p>
+                        <p class="text-color font-sz-9"><i class="fa-solid fa-chevron-right text-white"></i> Resto &amp;
+                            Bar</p>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <h5 class="h5 text-white pt-5 pb-4">Have a Questions?</h5>
+                        <p><i class="fa-solid fa-map color-cream"></i>
+                            <span class="text-color font-sz-9 px-1">Sector 71, Mohali, Punjab</span>
+                        </p>
+                        <p><i class="fa-solid fa-phone color-cream"></i> <span
+                                class="text-color font-sz-9 px-1">+919651-XXX-XXX</span></p>
+                        <p><i class="fa-brands fa-telegram fa-2x color-cream"></i> <span
+                                class="text-color font-sz-9 px-1">Connect
+                                On Telegram</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="row justify-content-center align-items-center height-100">
+            <div class="col-12">
+                <div class="text-center text-color font-sz-9">
+                    Copyright &copy;2023 All rights reserved
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
